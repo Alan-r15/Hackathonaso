@@ -5,7 +5,7 @@ import numpy as np
 class mlmodel():
 	def __init__(self):
 		self.team = "Los voladores de Papantla"
-		self.name = "Hentai Lover De Durango"
+		self.name = "Hentai Lover De Durango 2.0"
 		self.model = keras.models.load_model("Aver256BIENAZO.model",compile=False)
 		self.labels = ["Apple","Banana","Orange","Mixed"]
 
