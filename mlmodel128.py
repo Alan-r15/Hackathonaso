@@ -6,7 +6,7 @@ class mlmodel():
 	def __init__(self):
 		self.team = "Los voladores de Papantla"
 		self.name = "Hentai Lover De Durango"
-		self.model = keras.models.load_model("Aver(1).model",compile=False)
+		self.model = keras.models.load_model("Aver128.model",compile=False)
 		self.labels = ["Apple","Banana","Orange","Mixed"]
 
 	def predict(self,path = "Appleasa.jpg"):
@@ -15,9 +15,9 @@ class mlmodel():
 
 		try:
 			im = Image.open(path).convert('L')
-			im = im.resize((64,64))
+			im = im.resize((128,128))
 			np_im = np.array(im)  # convert to array
-			np_im = np_im.reshape(-1,64,64,1)
+			np_im = np_im.reshape(-1,128,128,1)
 
 			prediction = self.model.predict(np_im)
 			predicted_fruits  = []
