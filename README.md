@@ -1,4 +1,3 @@
 # Hackathonaso
-Sí
 
-Le buu le mato le wawa
+Modelo, imagen y clase en la misma carpeta
